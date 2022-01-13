@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans;
+    padding-top: 86px;
+    overflow-x: hidden;
+}
+header {
+    top: 0;
+    left: 0;
+    @apply bg-white fixed w-full z-20;
+    height: 86px;
+
+}
+.button-primary {
+    @apply text-white font-bold bg-yellow rounded-xl inline-flex items-center justify-center py-2 px-2 lg:px-4 leading-6 hover:bg-blue w-full lg:w-auto;
+    height: 54px;
+}
+.button-secondary {
+    @apply text-blue font-bold border-4 rounded-xl border-blue-light flex items-center justify-center py-2 px-2 lg:px-4 leading-6 hover:bg-blue-light;
+    height: 54px;
+}
+.heading {
+    @apply font-bold text-xl lg:text-2xl leading-8 lg:leading-10 mb-3;
+}
+/*// Forms*/
+.input-set {
+    @apply flex flex-col-reverse;
+}
+.input-set label {
+    @apply invisible;
+}
+.input-set input:focus + label,
+.input-set textarea:focus + label {
+    @apply visible;
+}
+.input-set input {
+    @apply focus:outline-none focus:border-gray-dark focus:ring-gray;
+}
+
+.section-1 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    padding-bottom: 400px;
+}
+@screen lg {
+    .section-1 {
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+        background-position: top right;
+        padding-bottom: 0;
+    }
+}
+/* Card */
+.photos-card {
+    border-top: 50px solid white;
+}
+.card {
+    @apply border-gray-light border-4 p-3 rounded-md mb-4;
+}
+.card-cross {
+    @apply rounded-md border-4 border-gray-light py-2 px-3 mb-3 relative xl:h-2xl;
+}
+.card-cross .badge {
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: -14px;
+    @apply flex items-center justify-center rounded-full bg-gray-light text-orange absolute;
+}
+.card .card-label {
+    height: 54px;
+    @apply bg-blue-light flex items-center px-2 uppercase text-blue font-bold text-lg;
+}
+.card .card-label .ico {
+    height: 74px;
+    width: 74px;
+    @apply bg-blue rounded-full flex items-center justify-center mr-2;
+}
+
+/* timeline */
+#timeline .box {
+    @apply lg:w-1/2 text-white items-center relative;
+    height: 180px;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: white;
+    top: 0;
+    bottom: 0;
+}
+#timeline .box.left::after {
+    @apply lg:left-full left-0;
+}
+#timeline .box.right::after {
+    @apply lg:right-full left-0;
+}
+
+#timeline .bullet {
+    width: 75px;
+    height: 75px;
+    @apply flex flex-none items-center justify-center text-blue relative z-10;
+}
+#timeline .box.left  {
+    @apply lg:flex-row-reverse left-0;
+}
+#timeline .box.right  {
+    @apply lg:left-1/2 left-0;
+}
+@screen lg {
+    #timeline .box.left .bullet {
+        left: calc(75px/2);
+    }
+}
+#timeline .box .bullet {
+    right: calc(75px/2);
+}
+
+/* slider */
+.slider-item {
+    @apply mr-4 w-full lg:w-3/5 lg:mb-0 mb-4;
+}
+#slider {
+    @apply lg:flex lg:flex-nowrap;
+}
+@screen lg {
+    #slider {
+        width: 130%;
+        overscroll-behavior: none;
+    }
+}
