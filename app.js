@@ -61,4 +61,3 @@ gsap.utils.toArray(".button").forEach((a, i) => {
     });
 });
 
->>>>>>> 1efb23af624bf8a6a42bb4758913dd7db274a1fd
