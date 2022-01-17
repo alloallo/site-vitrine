@@ -8,7 +8,7 @@ ScrollTrigger.matchMedia({
     // desktop
     "(min-width: 1024px)": function() {
         gsap.to(sections, {
-            xPercent: -150 * (sections.length - 1),
+            xPercent: -25 * (sections.length),
             ease: 'none',
             scrollTrigger: {
                 trigger: ".section-4",

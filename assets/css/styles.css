@@ -837,10 +837,6 @@ select {
   background-color: rgb(255 168 0 / 0.1);
 }
 
-.bg-\[url\(\'\.\.\/img\/illustration-section1\.jpg\'\)\] {
-  background-image: url('../img/illustration-section1.jpg');
-}
-
 .bg-\[url\(\'\.\.\/img\/frame\.svg\'\)\] {
   background-image: url('../img/frame.svg');
 }
@@ -868,6 +864,11 @@ select {
 .py-2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-2 {
@@ -1090,13 +1091,6 @@ header {
   outline-offset: 2px;
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(251 245 238 / var(--tw-ring-opacity));
-}
-
-.section-1 {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom right;
-  padding-bottom: 400px;
 }
 
 @media (min-width: 1024px) {
@@ -1328,6 +1322,14 @@ header {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:z-10 {
+    z-index: 10;
+  }
+
   .lg\:mr-1 {
     margin-right: 0.5rem;
   }
@@ -1376,10 +1378,6 @@ header {
     display: grid;
   }
 
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1414,6 +1412,10 @@ header {
 
   .lg\:gap-4 {
     gap: 2rem;
+  }
+
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
   }
 
   .lg\:py-xl {

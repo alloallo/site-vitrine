@@ -40,12 +40,6 @@ header {
     @apply focus:outline-none focus:border-gray-dark focus:ring-gray;
 }
 
-.section-1 {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom right;
-    padding-bottom: 400px;
-}
 @screen lg {
     .section-1 {
         background-repeat: no-repeat;
